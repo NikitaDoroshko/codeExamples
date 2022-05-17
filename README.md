@@ -1,8 +1,8 @@
 Пример небольшого модуля с апи интерфейсом для микросервиса<br>
-/api/modules/api/modules/integration<br>
+<b>/api/modules/api/modules/integration</b><br>
 в котором используется написанный компонент по взаимодействию скрипта со сторонним апи<br>
-/api/src/integration/components<br>
+<b>/api/src/integration/components</b><br>
 
 
-/examples/models - примеры моделей<br>
-/examples/controllers - примеры контроллеров<br>
+<b>/examples/models</b> - примеры моделей<br>
+<b>/examples/controllers</b> - примеры контроллеров<br>
