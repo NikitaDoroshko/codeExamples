@@ -51,9 +51,8 @@ class ExtensionController extends AppController
     {
         try {
             if (Event::DIRECTION_INCOMING === $this->app->instance->event->request->getDirection())
-                var_dump($this->commutator->send('extension', 'POST', 'api/worker/event/', $this->app->instance->data->getData()));
+                $this->commutator->send('extension', 'POST', 'api/worker/event/', $this->app->instance->data->getData());
         } catch (CommutatorException $e) {
-            var_dump($e);
             $this->logger->addInFile('send_extension_service', $e);
         }
     }
