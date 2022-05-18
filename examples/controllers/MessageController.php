@@ -15,7 +15,7 @@ class MessageController extends AppController
     }
 
     public function actionSend(): string
-{
+    {
         $data = $this->app->data();
         $message = $this->pbx->twilioClient->createMessageResource($this->app->instance->event->request->To, $data->config);
 
